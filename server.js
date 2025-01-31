@@ -21,7 +21,7 @@ connectDB();
 // CORS Middleware - Allow requests from the frontend (adjust URL to match your frontend)
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:3001"], // Adjust this to your frontend's URL
+    origin: ["http://localhost:3000", "http://localhost:3001", "https://feed-backend-5awv.onrender.com/api/auth/logout"], // Adjust this to your frontend's URL
     credentials: true, // Allow credentials (cookies, etc.)
     allowedHeaders: ["Content-Type", "Authorization"], // Allow these headers
   })
