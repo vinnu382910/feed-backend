@@ -6,7 +6,7 @@ const postRoutes = require("./routes/postRoutes");
 const profileRoute = require("./routes/profileRoute");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;;
 
 // Middleware to parse JSON and URL-encoded data
 app.use(express.json());
