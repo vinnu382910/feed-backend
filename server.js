@@ -41,7 +41,7 @@ const uploadDir = path.join(__dirname, "uploads/post-images");
 app.use("/uploads/post-images", express.static(uploadDir));
 
 // Routes
-app.use("/api/auth", profileRoute); // Auth routes
+app.use("/api", profileRoute); // Auth routes
 app.use("/api", profileRoute); // Profile routes
 app.use("/api", postRoutes); // Post routes
 
